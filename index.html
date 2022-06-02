@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class:"header">
+            <h1 id="title" class="text-center"> Survey Form
+            </h1>
+
+            <p id="description" class="description text-center">Please fill the required fields
+            </p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <br>
+                <label id="name-label" for="name">Name</label>
+                <br>
+                <input type="text" ; id="name" ; name="name" ; class="form-control" ;
+                    placeholder="Please enter your name" ; required />
+            </div>
+
+            <div class="form-group">
+                <br>
+                <label id="email-label" for="email">E-mail</label>
+                <br>
+                <input type="email" ; id="email" ; name="email" ; class="form-control" ;
+                    placeholder="Please enter your email" ; required />
+            </div>
+
+            <div class="form-group">
+                <br>
+                <label id="number-label" for="number">Age</label>
+                <br>
+                <input type="number" ; id="number" ; name="age" ; class="form-control" ;
+                    placeholder="Please enter your age" ; min="1" ; max="120" ; />
+            </div>
+
+            <div class="form-group">
+                <p>Which option describes you best?</p>
+                <select id="dropdown" name="level" class="form-control" required>
+                    <option disabled selected value> Select your level </option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Are you satisfied with the content?</p>
+                <label>
+                    <input name="satisfaction" ; type="radio" ; value="yes" class="input-radio" />
+                    Yes
+                </label>
+                <label>
+                    <input name="satisfaction" ; type="radio" ; value="no" class="input-radio" />
+                    No
+                </label>
+
+                <div class="form-group">
+                    <p>When would you like the next semester to begin?
+                        <br>
+                        <span class="clue"> (You can select more than
+                            one)</span>
+                    </p>
+                </div>
+                <div id="date">
+                    <label class="input-checkbox">
+                        <input name="date" ; type="checkbox" ; value="march" />
+                        March
+                    </label>
+                    <label class="input-checkbox">
+                        <input name="date" ; type="checkbox" ; value="april" />
+                        April
+                    </label>
+                    <label class="input-checkbox">
+                        <input name="date" ; type="checkbox" ; value="may" />
+                        May
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Any comments?</p>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="Enter your comment here..."></textarea>
+                </div>
+                <br>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+
+                </div>
+                <br>
+            </div>
+        </form>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</body>
+
+</html>
